@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local and Session</title>
+</head>
+<body>
+    <div id="formDiv">
+        <form id="carForm">
+            <h1>Local Storage</h1>
+            <label for="carBrand" >Car</label>
+            <input type="text" id="carBrand" placeholder="Car brand"><br>
+            <label for="carPrice" >Price</label>
+            <input type="text" id="carPrice" placeholder="Price"><br>
+            <label for="key" >Key</label>
+            <input type="text" id="key" placeholder="Key"><br>
+            <button type="submit">Store Records</button>
+        </form>
+        <br>
+        <label for="retrieveKey" >Enter Key to retrieve item</label>
+        <input type="text" id="retrieveKey" placeholder="retrieveKey" required><br>
+        <button id="retrieveButton">Retrieve records</button>
+        <br>
+        <div id="retrieve"></div> 
+        <br>
+        <label for="removeKey" >Enter Key to delete item</label>
+        <input type="text" id="removeKey" placeholder="removeKey" required><br>
+        <button id="removeButton">Remove record</button>
+        <br>
+        <button id="clearButton">Clear all records</button>
+    <script src="./sess.js"></script>
+</body>
+</html>
